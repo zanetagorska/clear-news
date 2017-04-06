@@ -917,6 +917,139 @@ header nav.navbar-black a {
   line-height: 50px;
   color: #fff;
 }
+header nav.navbar {
+  text-align: left;
+  margin: 0 auto;
+  padding: 30px 15px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: calc((100% - 970px)/2);
+    padding-right: calc((100% - 970px)/2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  header nav.navbar {
+    padding-left: calc((100% - 1170px)/2);
+    padding-right: calc((100% - 1170px)/2);
+  }
+}
+header nav.navbar.smaller {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px #4d4d4d solid;
+}
+header nav.navbar .fa-bars {
+  float: right;
+  line-height: 28px;
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar .fa-bars {
+    display: none;
+  }
+}
+header nav.navbar .logo-box {
+  text-align: center;
+  padding-bottom: 30px;
+}
+header nav.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar ul {
+    display: block;
+    clear: none;
+  }
+}
+header nav.navbar ul li {
+  display: block;
+  padding: 15px 0;
+}
+header nav.navbar ul li:first-child {
+  padding-top: 30px;
+}
+@media screen and (min-width: 992px) {
+  header nav.navbar ul li {
+    padding: 0 30px;
+    display: inline-block;
+  }
+  header nav.navbar ul li:first-child {
+    padding-top: 0;
+    padding-left: 15px;
+  }
+  header nav.navbar ul li:last-child {
+    padding-right: 15px;
+  }
+}
+header nav.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 5px;
+}
+header nav.navbar ul li a:hover {
+  border-bottom: 4px solid #29abe2;
+}
+header .hero {
+  padding-top: 89px;
+  text-align: center;
+  background: url("../img/hero/hero.png") no-repeat;
+  background-position: center 64px;
+}
+@media screen and (min-width: 768px) {
+  header .hero {
+    text-align: left;
+    position: relative;
+    background: #ffffff;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #ffffff), color-stop(52%, #f6f6f6), color-stop(52%, #e1e1e1), color-stop(100%, #e1e1e1));
+    background: -webkit-linear-gradient(left, #ffffff 0%, #f6f6f6 52%, #e1e1e1 52%, #e1e1e1 100%);
+    background: linear-gradient(to right, #ffffff 0%, #f6f6f6 52%, #e1e1e1 52%, #e1e1e1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1', GradientType=1);
+  }
+}
+@media screen and (min-width: 992px) {
+  header .hero {
+    padding-top: 43px;
+  }
+}
+header .hero .hero-text {
+  margin: 140px 0 ;
+  z-index: 99;
+}
+@media screen and (min-width: 992px) {
+  header .hero .hero-text {
+    margin: 260px 0 140px;
+  }
+}
+header .hero .hero-text .btn-first {
+  margin-right: 8px;
+}
+header .hero .hero-text .btn-invert {
+  margin-left: 8px;
+}
+header .hero .hero-img,
+header .hero img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .hero .hero-img,
+  header .hero img {
+    display: block;
+    z-index: 99;
+  }
+}
 footer {
   background: #000;
   color: #fff;

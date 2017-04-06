@@ -26,134 +26,130 @@ header {
       color: #fff;
     }
   }
-  // nav.navbar {
-  //   position: fixed;
-  //   margin: 0 auto;
-  //   padding: 30px 15px;
-  //   left: 0;
-  //   right: 0;
-  //   z-index: 100;
-  //   background: #fff;
-  //   .transition();
-  //   @media screen and (min-width: @screen-md) {
-  //     padding-top: 48px;
-  //     padding-bottom: 48px;
-  //     padding-left: ~"calc((100% - 970px)/2)";
-  //     padding-right: ~"calc((100% - 970px)/2)";
-  //     background: transparent;
-  //   }
-  //   @media screen and (min-width: @screen-lg) {
-  //     padding-left: ~"calc((100% - 1170px)/2)";
-  //     padding-right: ~"calc((100% - 1170px)/2)";
-  //   }
+  nav.navbar {
+    text-align: left;
+    // position: fixed;
+    margin: 0 auto;
+    padding: 30px 15px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #fff;
+    .transition();
+    @media screen and (min-width: @screen-md) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      padding-left: ~"calc((100% - 970px)/2)";
+      padding-right: ~"calc((100% - 970px)/2)";
+    }
+    @media screen and (min-width: @screen-lg) {
+      padding-left: ~"calc((100% - 1170px)/2)";
+      padding-right: ~"calc((100% - 1170px)/2)";
+    }
 
-  //   &.smaller {
-  //     background: #fff;
-  //     padding-top: 30px;
-  //     padding-bottom: 30px;
-  //     border-bottom: 1px @gray solid;
-  //   }
+    &.smaller {
+      background: #fff;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px @gray solid;
+    }
 
-  //   .logo {
-  //     font-family: 'Montserrat', sans-serif;
-  //     font-weight: 700;
-  //     font-size: 24px;
-  //     float: left;
-  //   }
+    .fa-bars {
+      float: right;
+      line-height: 28px;
+      @media screen and (min-width: @screen-md) {
+        display: none;
+      }
+    }
 
-  //   .fa {
-  //     float: right;
-  //     line-height: 28px;
-  //     @media screen and (min-width: @screen-md) {
-  //       display: none;
-  //     }
-  //   }
+    .logo-box {
+      text-align: center;
+      padding-bottom: 30px;
+    }
 
-  //   ul {
-  //     margin: 0;
-  //     padding: 0;
-  //     list-style: none;
-  //     text-transform: uppercase;
-  //     display: none;
-  //     clear: both;
-  //     @media screen and (min-width: @screen-md) {
-  //       display: block;
-  //       clear: none;
-  //       float: right;
-  //     }
-  //     li {
-  //       display: block;
-  //       padding: 15px 0;
-  //       &:first-child {
-  //         padding-top: 30px;
-  //       }
-  //       @media screen and (min-width: @screen-md) {
-  //         padding: 0 16px;
-  //         display: inline-block;
-  //         &:first-child {
-  //           padding-top: 0;
-  //           padding-left: 0;
-  //         }
-  //         &:last-child {
-  //           padding-right: 0;
-  //         }
-  //       }
-  //       a {
-  //         text-decoration: none;
-  //         color: #000;
-  //         padding-bottom: 5px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-transform: uppercase;
+      display: none;
+      @media screen and (min-width: @screen-md) {
+        display: block;
+        clear: none;
+      }
+      li {
+        display: block;
+        padding: 15px 0;
+        &:first-child {
+          padding-top: 30px;
+        }
+        @media screen and (min-width: @screen-md) {
+          padding: 0 30px;
+          display: inline-block;
+          &:first-child {
+            padding-top: 0;
+            padding-left: 15px;
+          }
+          &:last-child {
+            padding-right: 15px;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+          padding-bottom: 5px;
 
-  //         &:hover {
-  //           border-bottom: 2px solid #000;
-  //         }
-  //       }
-  //     }
+          &:hover {
+            border-bottom: 4px solid @brand-primary;
+          }
+        }
+      }
 
-  //   }
-  // }
-  // .hero {
-  //   padding-top: 89px;
-  //   text-align: center;
-  //   background: url("../img/hero/hero.png") no-repeat;
-  //   background-position: center 64px;
-  //   @media screen and (min-width: @screen-sm) {
-  //     text-align: left;
-  //     position: relative;
-  //     background: rgba(255,255,255,1);
-  //     background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
-  //     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(52%, rgba(246,246,246,1)), color-stop(52%, rgba(225,225,225,1)), color-stop(100%, rgba(225,225,225,1)));
-  //     background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
-  //     background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
-  //     background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
-  //     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
-  //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1', GradientType=1 );
-  //   }
-  //   @media screen and (min-width: @screen-md) {
-  //     padding-top: 43px;
-  //   }
+    }
+  }
+  .hero {
+    padding-top: 89px;
+    text-align: center;
+    background: url("../img/hero/hero.png") no-repeat;
+    background-position: center 64px;
+    @media screen and (min-width: @screen-sm) {
+      text-align: left;
+      position: relative;
+      background: rgba(255,255,255,1);
+      background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(52%, rgba(246,246,246,1)), color-stop(52%, rgba(225,225,225,1)), color-stop(100%, rgba(225,225,225,1)));
+      background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
+      background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
+      background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 52%, rgba(225,225,225,1) 52%, rgba(225,225,225,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1', GradientType=1 );
+    }
+    @media screen and (min-width: @screen-md) {
+      padding-top: 43px;
+    }
 
-  //   .hero-text {
-  //     margin: 140px 0 ;
-  //     z-index: 99;
-  //     @media screen and (min-width: @screen-md) {
-  //       margin: 260px 0 140px;
-  //     }
+    .hero-text {
+      margin: 140px 0 ;
+      z-index: 99;
+      @media screen and (min-width: @screen-md) {
+        margin: 260px 0 140px;
+      }
 
-  //     .btn-first {
-  //       margin-right: 8px;
-  //     }
-  //     .btn-invert {
-  //       margin-left: 8px;
-  //     }
-  //   }
-  //   .hero-img, img {
-  //     display: none;
-  //     @media screen and(min-width: @screen-sm) {
-  //       display: block;
-  //       z-index: 99;
-  //     }
-  //   }
-  // }
+      .btn-first {
+        margin-right: 8px;
+      }
+      .btn-invert {
+        margin-left: 8px;
+      }
+    }
+    .hero-img, img {
+      display: none;
+      @media screen and(min-width: @screen-sm) {
+        display: block;
+        z-index: 99;
+      }
+    }
+  }
 }
 
 .home {
