@@ -23,7 +23,7 @@ header {
     ul {
       margin: 0;
       padding: 0;
-      
+
       a {
         padding: 0 15px;
         line-height: 50px;
@@ -45,12 +45,6 @@ header {
     @media screen and (min-width: @screen-md) {
       padding-top: 48px;
       padding-bottom: 48px;
-      padding-left: ~"calc((100% - 970px)/2)";
-      padding-right: ~"calc((100% - 970px)/2)";
-    }
-    @media screen and (min-width: @screen-lg) {
-      padding-left: ~"calc((100% - 1170px)/2)";
-      padding-right: ~"calc((100% - 1170px)/2)";
     }
 
     &.smaller {
@@ -80,24 +74,23 @@ header {
       text-transform: uppercase;
       display: none;
       @media screen and (min-width: @screen-md) {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         clear: none;
       }
       li {
-        display: block;
-        padding: 15px 0;
+        // display: block;
+      
         &:first-child {
-          padding-top: 30px;
+         
         }
         @media screen and (min-width: @screen-md) {
-          padding: 0 30px;
-          display: inline-block;
+          
+          display: flex;
           &:first-child {
             padding-top: 0;
-            padding-left: 15px;
           }
           &:last-child {
-            padding-right: 15px;
           }
         }
         a {

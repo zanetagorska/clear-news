@@ -147,14 +147,6 @@ header nav.navbar {
   header nav.navbar {
     padding-top: 48px;
     padding-bottom: 48px;
-    padding-left: calc((100% - 970px)/2);
-    padding-right: calc((100% - 970px)/2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  header nav.navbar {
-    padding-left: calc((100% - 1170px)/2);
-    padding-right: calc((100% - 1170px)/2);
   }
 }
 header nav.navbar.smaller {
@@ -185,28 +177,26 @@ header nav.navbar ul {
 }
 @media screen and (min-width: 992px) {
   header nav.navbar ul {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     clear: none;
   }
 }
-header nav.navbar ul li {
-  display: block;
-  padding: 15px 0;
-}
-header nav.navbar ul li:first-child {
-  padding-top: 30px;
-}
 @media screen and (min-width: 992px) {
   header nav.navbar ul li {
-    padding: 0 30px;
-    display: inline-block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   header nav.navbar ul li:first-child {
     padding-top: 0;
-    padding-left: 15px;
-  }
-  header nav.navbar ul li:last-child {
-    padding-right: 15px;
   }
 }
 header nav.navbar ul li a {
