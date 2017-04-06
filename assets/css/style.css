@@ -123,7 +123,11 @@ header nav.navbar-black ul.social-media li {
 header nav.navbar-black ul.social-media:last-child a {
   padding-right: 0;
 }
-header nav.navbar-black a {
+header nav.navbar-black ul {
+  margin: 0;
+  padding: 0;
+}
+header nav.navbar-black ul a {
   padding: 0 15px;
   line-height: 50px;
   color: #fff;
