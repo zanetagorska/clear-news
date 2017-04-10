@@ -136,13 +136,34 @@ header {
 
 .home {
   #latest-stories {
-    padding: 72px 0 50px;
+    padding: 72px 0 43px;
     .img-box {
       margin-top: 2.2rem;
     }
   }
   #in-pictures {
-
+    padding: 42px 0 74px;
+    background: @gray-lighter;
+    h2 {
+      margin-top: 0;
+      text-align: center;
+      &::after {
+        display: none;
+      }
+    }
+    .img-box {
+      margin-top: 0.8em;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("../img/photoIcon.png");
+        width: 44px;
+        height: 34px;
+        top: ~"calc(50% - 17px)";
+        left: ~"calc(50% - 22px)";
+      }
+    }
   }
   #economy {
 
