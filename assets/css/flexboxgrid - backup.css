@@ -497,9 +497,9 @@
   }
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 64em) {
   .container {
-    width: 61rem;
+    width: 65rem;
   }
 
   .col-md,
@@ -532,8 +532,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
   .col-md {
