@@ -57,9 +57,6 @@ p {
   font-size: 14px;
   font-weight: 100;
 }
-section {
-  padding: 50px 0;
-}
 .btn {
   font-size: 14px;
   padding: 12px 20px;
@@ -114,38 +111,38 @@ a:focus {
 .show {
   display: block !important;
 }
-header nav.navbar-black {
+nav.navbar-black {
   background: #333;
   height: 50px;
 }
-header nav.navbar-black ul.pages-list {
+nav.navbar-black ul.pages-list {
   float: left;
 }
-header nav.navbar-black ul.pages-list li {
+nav.navbar-black ul.pages-list li {
   float: left;
 }
-header nav.navbar-black ul.pages-list li:first-child a {
+nav.navbar-black ul.pages-list li:first-child a {
   padding-left: 0;
 }
-header nav.navbar-black ul.social-media {
+nav.navbar-black ul.social-media {
   float: right;
 }
-header nav.navbar-black ul.social-media li {
+nav.navbar-black ul.social-media li {
   float: left;
 }
-header nav.navbar-black ul.social-media:last-child a {
+nav.navbar-black ul.social-media:last-child a {
   padding-right: 0;
 }
-header nav.navbar-black ul {
+nav.navbar-black ul {
   margin: 0;
   padding: 0;
 }
-header nav.navbar-black ul a {
+nav.navbar-black ul a {
   padding: 0 15px;
   line-height: 50px;
   color: #fff;
 }
-header nav.navbar {
+nav.navbar {
   text-align: left;
   margin: 0 auto;
   padding: 30px 15px;
@@ -157,31 +154,31 @@ header nav.navbar {
   transition: all 300ms ease-in;
 }
 @media screen and (min-width: 992px) {
-  header nav.navbar {
+  nav.navbar {
     padding-top: 48px;
     padding-bottom: 0;
   }
 }
-header nav.navbar.smaller {
+nav.navbar.smaller {
   background: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px #4d4d4d solid;
 }
-header nav.navbar .fa-bars {
+nav.navbar .fa-bars {
   float: right;
   line-height: 28px;
 }
 @media screen and (min-width: 992px) {
-  header nav.navbar .fa-bars {
+  nav.navbar .fa-bars {
     display: none;
   }
 }
-header nav.navbar .logo-box {
+nav.navbar .logo-box {
   text-align: center;
   padding-bottom: 50px;
 }
-header nav.navbar ul {
+nav.navbar ul {
   height: 38px;
   margin: 0;
   padding: 0;
@@ -190,7 +187,7 @@ header nav.navbar ul {
   display: none;
 }
 @media screen and (min-width: 992px) {
-  header nav.navbar ul {
+  nav.navbar ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -203,32 +200,32 @@ header nav.navbar ul {
   }
 }
 @media screen and (min-width: 992px) {
-  header nav.navbar ul li {
+  nav.navbar ul li {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
-  header nav.navbar ul li:first-child {
+  nav.navbar ul li:first-child {
     padding-top: 0;
   }
 }
-header nav.navbar ul li a {
+nav.navbar ul li a {
   text-decoration: none;
   color: #000;
   padding-bottom: 5px;
 }
-header nav.navbar ul li a:hover {
+nav.navbar ul li a:hover {
   border-bottom: 4px solid #29abe2;
 }
-header .swiper-container {
+.swiper-container {
   height: 490px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
-header .swiper-container .swiper-slide {
+.swiper-container .swiper-slide {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +234,7 @@ header .swiper-container .swiper-slide {
   display: -ms-flexbox;
   display: flex;
 }
-header .swiper-container .swiper-slide .heading-box {
+.swiper-container .swiper-slide .heading-box {
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
           align-self: flex-end;
@@ -255,7 +252,7 @@ header .swiper-container .swiper-slide .heading-box {
   max-width: 50%;
   background: #fff;
 }
-header .swiper-container .swiper-slide .heading {
+.swiper-container .swiper-slide .heading {
   width: 38rem;
   padding-right: 8px;
   padding-left: 6rem;
@@ -290,64 +287,38 @@ header .swiper-container .swiper-slide .heading {
   top: calc(50% - 17px);
   left: calc(50% - 22px);
 }
-footer {
-  background: #000;
-  color: #fff;
+.home #economy-and-health {
   padding: 36px 0;
 }
-footer .icon-box {
-  text-align: center;
+.home #economy-and-health #economy .img-box {
+  margin-top: 2em;
 }
-@media screen and (min-width: 768px) {
-  footer .icon-box {
-    text-align: left;
-  }
+.home #economy-and-health #health .health-articles {
+  margin-top: 15px;
 }
-footer .fa {
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin: 0 3px;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
+.home #economy-and-health #health .health-articles p {
+  line-height: 1.3em;
 }
-footer .fa:hover {
-  color: #000;
-  background: #fff;
+footer {
+  padding: 88px 0 0 0;
+  border-top: 1px solid #ccc;
 }
-footer .fa.fa-long-arrow-up {
-  background: #fff;
-  color: #000;
-  border: 0;
+footer img {
+  margin: 0 auto 50px;
 }
-footer .copy-rights {
-  text-align: center;
+footer nav.navbar-black {
+  height: 86px;
 }
-@media screen and (min-width: 768px) {
-  footer .copy-rights {
-    text-align: right;
-  }
+footer nav.navbar-black ul > li > a {
+  line-height: 86px;
 }
-@media screen and (min-width: 992px) {
-  footer .copy-rights {
-    text-align: center;
-  }
+footer nav.navbar-black p {
+  padding: 0 15px;
+  line-height: 86px;
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
 }
-footer .copy-rights p {
-  margin: 5px 0;
-}
-footer .scroll-top-btn {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  footer .scroll-top-btn {
-    display: block;
-    position: absolute;
-    right: 0;
-    margin-right: 15px;
-  }
+footer nav.navbar-black p a {
+  color: #29abe2;
 }
