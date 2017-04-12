@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Strona główna</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Style CSS -->
+  <link media="all" type="text/css" rel="stylesheet" href="assets/css/lightgallery.css">
+</head>
+<body class="home">
+
+
+<div id="video-gallery">
+  <a href="https://www.youtube.com/watch?v=meBbDqAXago" >
+      <img src="assets/img/economy/1.jpg" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=meBbDqAXago" >
+      <img src="assets/img/economy/1.jpg" />
+  </a>
+</div>
+
+<!-- Core scripts -->
+<script src="assets/js/jquery-3.1.0.min.js"></script>
+<script src="assets/js/lightgallery.js"></script>
+<script src="assets/js/lg-video.min.js"></script>
+<script>
+    $(document).ready(function() {
+       $('#video-gallery').lightGallery();
+       
+    });
+</script>
+</body>
+
+</html>

@@ -32,26 +32,14 @@
   }
 
   nav.navbar {
-    text-align: left;
-    // position: fixed;
+    position: fixed;
     margin: 0 auto;
-    padding: 30px 15px;
+    padding: 30px 0;
     left: 0;
     right: 0;
     z-index: 100;
     background: #fff;
     .transition();
-    @media screen and (min-width: @screen-md) {
-      padding-top: 48px;
-      padding-bottom: 0;
-    }
-
-    &.smaller {
-      background: #fff;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      border-bottom: 1px @gray solid;
-    }
 
     .fa-bars {
       float: right;
@@ -66,46 +54,61 @@
       padding-bottom: 50px;
     }
 
-    ul {
-      height: 38px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      text-transform: uppercase;
-      display: none;
-      @media screen and (min-width: @screen-md) {
+    .level1-list {
+      display: flex;
+      justify-content: space-between;
+      width: 76rem;
+      margin: 0 auto;
+      & > li {
+        display: flex;
+      }
+    }
+
+    .level2-container {
+      position: absolute;
+      background: #000;
+      width: 100%;
+      left: 0;
+      top: 100%;
+
+      .level2-list {
         display: flex;
         justify-content: space-between;
-        clear: none;
-      }
-      li {
-        // display: block;
-      
-        &:first-child {
-         
-        }
-        @media screen and (min-width: @screen-md) {
-          
+        width: 76rem;
+        margin: 0 auto;
+        & > li {
           display: flex;
-          &:first-child {
-            padding-top: 0;
-          }
-          &:last-child {
-          }
-        }
-        a {
-          text-decoration: none;
-          color: #000;
-          padding-bottom: 5px;
-
-          &:hover {
-            border-bottom: 4px solid @brand-primary;
+          a {
+            color: #fff;
           }
         }
       }
+    }
 
+    .level3-container {
+      position: absolute;
+      background: #000;
+      width: 100%;
+      left: 0;
+      top: 100%;
+
+      #video-gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 78rem;
+        margin: 0 auto;
+        & > a {
+          margin: 15px;
+          box-sizing: border-box;
+          img {
+            display: block;
+            max-width: 100%;
+          }
+        }
+      }
     }
   }
+
 
   .swiper-container {
     height: 490px;

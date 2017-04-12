@@ -7,6 +7,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 $(function() {
+// Photo BG
   var slides = $('.swiper-slide');
   for (i=0; i<slides.length; i++) {
     imageUrl = 'assets/img/slider/'+(i+1)+'.jpg';
@@ -15,3 +16,8 @@ $(function() {
     $slide.css('background-image', 'url(' + imageUrl + ')');
   }
 });
+
+// Menu
+      $(document).ready(function() {
+        $('#video-gallery').lightGallery(); 
+    });

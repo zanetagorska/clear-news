@@ -11,11 +11,12 @@
 
   <!-- Style CSS -->
   <link media="all" type="text/css" rel="stylesheet" href="assets/css/flexboxgrid.css">
-   <link media="all" type="text/css" rel="stylesheet" href="assets/css/swiper.min.css">
+  <link media="all" type="text/css" rel="stylesheet" href="assets/css/swiper.min.css">
+  <link media="all" type="text/css" rel="stylesheet" href="assets/css/lightgallery.css">
   <link media="all" type="text/css" rel="stylesheet" href="assets/css/style.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body class="home">
   <header>
@@ -36,27 +37,54 @@
         </ul>
       </div>
     </nav>
+
     <nav class="navbar">
-      <div class="container">
-        <div class="logo-box">
-          <a href="">
-            <img src="assets/img/logo.png" alt="logo">
-          </a>
-        </div>
+      <div class="logo-box">
+        <a href="">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="level1-container">
         <i class="fa fa-bars" aria-hidden="true"></i>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Culture</a></li>
-          <li><a href="#">Entertainment</a></li>
-          <li><a href="#">Politics</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Worldwide</a></li>
-          <li><a href="#">Innovation</a></li>
-          <li><a href="#">Education</a></li>
-          <i class="fa fa-search" aria-hidden="true"></i>
+        <ul class="level1-list">
+          <li><a href="">home</a></li>
+          <li><a href="">culture</a></li>
+          <li><a href="">entertainment</a>
+            <div class="level2-container">
+              <ul class="level2-list">
+                <li><a href="#">Auditions</a>
+                  <div class="level3-container">
+                    <ul class="level3-list">
+                      <div id="video-gallery">
+                        <a href="https://www.youtube.com/watch?v=meBbDqAXago" data-poster="assets/img/economy/4.jpg">
+                          <img src="assets/img/economy/4.jpg">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=meBbDqAXago" data-poster="assets/img/economy/4.jpg">
+                          <img src="assets/img/economy/4.jpg">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=meBbDqAXago" data-poster="assets/img/economy/4.jpg">
+                          <img src="assets/img/economy/2.jpg">
+                        </a>
+                  </div>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Talk Shows</a></li>
+                <li><a href="#">Sports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">politics</a></li>
+          <li><a href="">sports</a></li>
+          <li><a href="">worldwide</a></li>
+          <li><a href="">innovation</a></li>
+          <li><a href="">education</a></li>
         </ul>
       </div>
     </nav>
+
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -319,6 +347,8 @@
 <!-- Core scripts -->
 <script src="assets/js/jquery-3.1.0.min.js"></script>
 <script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/lightgallery.js"></script>
+<script src="assets/js/lg-video.min.js"></script>
 <script src="assets/js/myscript.js"></script>
 </body>
 

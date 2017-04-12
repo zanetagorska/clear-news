@@ -1,4 +1,4 @@
-body {
+.home {
   font-family: 'Catamaran', sans-serif;
   font-weight: 400;
   color: #000;
@@ -84,6 +84,8 @@ p {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   color: #4d4d4d;
@@ -143,27 +145,15 @@ nav.navbar-black ul a {
   color: #fff;
 }
 nav.navbar {
-  text-align: left;
+  position: fixed;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 30px 0;
   left: 0;
   right: 0;
   z-index: 100;
   background: #fff;
   -webkit-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
-}
-@media screen and (min-width: 992px) {
-  nav.navbar {
-    padding-top: 48px;
-    padding-bottom: 0;
-  }
-}
-nav.navbar.smaller {
-  background: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px #4d4d4d solid;
 }
 nav.navbar .fa-bars {
   float: right;
@@ -178,45 +168,78 @@ nav.navbar .logo-box {
   text-align: center;
   padding-bottom: 50px;
 }
-nav.navbar ul {
-  height: 38px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-transform: uppercase;
-  display: none;
+nav.navbar .level1-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 76rem;
+  margin: 0 auto;
 }
-@media screen and (min-width: 992px) {
-  nav.navbar ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    clear: none;
-  }
+nav.navbar .level1-list > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-@media screen and (min-width: 992px) {
-  nav.navbar ul li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  nav.navbar ul li:first-child {
-    padding-top: 0;
-  }
+nav.navbar .level2-container {
+  position: absolute;
+  background: #000;
+  width: 100%;
+  left: 0;
+  top: 100%;
 }
-nav.navbar ul li a {
-  text-decoration: none;
-  color: #000;
-  padding-bottom: 5px;
+nav.navbar .level2-container .level2-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 76rem;
+  margin: 0 auto;
 }
-nav.navbar ul li a:hover {
-  border-bottom: 4px solid #29abe2;
+nav.navbar .level2-container .level2-list > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav.navbar .level2-container .level2-list > li a {
+  color: #fff;
+}
+nav.navbar .level3-container {
+  position: absolute;
+  background: #000;
+  width: 100%;
+  left: 0;
+  top: 100%;
+}
+nav.navbar .level3-container #video-gallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 78rem;
+  margin: 0 auto;
+}
+nav.navbar .level3-container #video-gallery > a {
+  margin: 15px;
+  box-sizing: border-box;
+}
+nav.navbar .level3-container #video-gallery > a img {
+  display: block;
+  max-width: 100%;
 }
 .swiper-container {
   height: 490px;
