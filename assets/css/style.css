@@ -177,8 +177,22 @@ nav.navbar .level1-list {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 76rem;
   margin: 0 auto;
+}
+@media only screen and (min-width: 48em) {
+  nav.navbar .level1-list {
+    width: 49rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  nav.navbar .level1-list {
+    width: 61rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  nav.navbar .level1-list {
+    width: 76rem;
+  }
 }
 nav.navbar .level1-list > li {
   display: -webkit-box;
@@ -202,8 +216,22 @@ nav.navbar .level2-container .level2-list {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 76rem;
   margin: 0 auto;
+}
+@media only screen and (min-width: 48em) {
+  nav.navbar .level2-container .level2-list {
+    width: 49rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  nav.navbar .level2-container .level2-list {
+    width: 61rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  nav.navbar .level2-container .level2-list {
+    width: 76rem;
+  }
 }
 nav.navbar .level2-container .level2-list > li {
   display: -webkit-box;
@@ -230,12 +258,32 @@ nav.navbar .level3-container #video-gallery {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 78rem;
   margin: 0 auto;
+}
+@media only screen and (min-width: 48em) {
+  nav.navbar .level3-container #video-gallery {
+    width: 49rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  nav.navbar .level3-container #video-gallery {
+    width: 61rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  nav.navbar .level3-container #video-gallery {
+    width: 76rem;
+  }
 }
 nav.navbar .level3-container #video-gallery > a {
   margin: 15px;
   box-sizing: border-box;
+}
+nav.navbar .level3-container #video-gallery > a:first-child {
+  margin-left: 0;
+}
+nav.navbar .level3-container #video-gallery > a:last-child {
+  margin-right: 0;
 }
 nav.navbar .level3-container #video-gallery > a img {
   display: block;
