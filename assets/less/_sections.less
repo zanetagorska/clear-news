@@ -44,17 +44,18 @@
     .fa-bars {
       float: right;
       line-height: 28px;
-      @media screen and (min-width: @screen-md) {
+      @media screen and (min-width: 750px) {
         display: none;
       }
     }
 
     .logo-box {
-      text-align: center;
+      margin: 0 auto;
       padding-bottom: 50px;
     }
 
     .level1-list {
+      // małe ekrany display block
       display: flex;
       justify-content: space-between;
       @media only screen and (min-width: 48em) {

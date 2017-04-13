@@ -159,13 +159,13 @@ nav.navbar .fa-bars {
   float: right;
   line-height: 28px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 750px) {
   nav.navbar .fa-bars {
     display: none;
   }
 }
 nav.navbar .logo-box {
-  text-align: center;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 nav.navbar .level1-list {
