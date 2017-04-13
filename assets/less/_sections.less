@@ -43,8 +43,9 @@
 
     .fa-bars {
       float: right;
+      margin-right: 60px;
       line-height: 28px;
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 48em) {
         display: none;
       }
     }
@@ -55,10 +56,15 @@
     }
 
     .level1-list {
-      // małe ekrany display block
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      width: 19rem;
+      @media only screen and (min-width: 28em) {
+        width: 29rem;
+      }
       @media only screen and (min-width: 48em) {
+        flex-direction: row;
+        justify-content: space-between;
         width: 49rem;
       }
       @media only screen and (min-width: 60em) {

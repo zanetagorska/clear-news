@@ -157,9 +157,10 @@ nav.navbar {
 }
 nav.navbar .fa-bars {
   float: right;
+  margin-right: 60px;
   line-height: 28px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 48em) {
   nav.navbar .fa-bars {
     display: none;
   }
@@ -173,14 +174,30 @@ nav.navbar .level1-list {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 19rem;
   margin: 0 auto;
+}
+@media only screen and (min-width: 28em) {
+  nav.navbar .level1-list {
+    width: 29rem;
+  }
 }
 @media only screen and (min-width: 48em) {
   nav.navbar .level1-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 49rem;
   }
 }
