@@ -147,7 +147,8 @@ nav.navbar-black ul a {
 nav.navbar {
   position: fixed;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 50px 0 0;
+  top: 50px;
   left: 0;
   right: 0;
   z-index: 100;
@@ -168,6 +169,8 @@ nav.navbar .fa-bars {
 nav.navbar .logo-box {
   margin: 0 auto;
   padding-bottom: 50px;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 nav.navbar .level1-list {
   display: -webkit-box;
@@ -217,12 +220,17 @@ nav.navbar .level1-list > li {
   display: -ms-flexbox;
   display: flex;
 }
+nav.navbar .level1-list > li > a.active {
+  border-bottom: 5px solid #29abe2;
+}
 nav.navbar .level2-container {
   position: absolute;
   background: #000;
   width: 100%;
   left: 0;
   top: 100%;
+  height: 380px;
+  text-transform: none;
 }
 nav.navbar .level2-container .level2-list {
   display: -webkit-box;
@@ -264,7 +272,7 @@ nav.navbar .level3-container {
   background: #000;
   width: 100%;
   left: 0;
-  top: 100%;
+  top: 20px;
 }
 nav.navbar .level3-container #video-gallery {
   display: -webkit-box;
@@ -306,7 +314,14 @@ nav.navbar .level3-container #video-gallery > a img {
   display: block;
   max-width: 100%;
 }
+nav.navbar.smaller {
+  top: 0;
+}
+nav.navbar.smaller .logo-box {
+  display: none;
+}
 .swiper-container {
+  margin-top: 170px;
   height: 490px;
   -webkit-box-align: center;
   -webkit-align-items: center;
