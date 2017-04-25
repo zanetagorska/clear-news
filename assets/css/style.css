@@ -114,8 +114,24 @@ a:focus {
   display: block !important;
 }
 nav.navbar-black {
+  display: none;
   background: #333;
   height: 50px;
+}
+@media screen and (min-width: 790px) {
+  nav.navbar-black {
+    display: block;
+  }
+}
+nav.navbar-black ul {
+  margin: 0;
+  padding: 0;
+}
+nav.navbar-black ul a {
+  padding: 0 15px;
+  line-height: 50px;
+  color: #fff;
+  display: block;
 }
 nav.navbar-black ul.pages-list {
   float: left;
@@ -135,37 +151,28 @@ nav.navbar-black ul.social-media li {
 nav.navbar-black ul.social-media:last-child a {
   padding-right: 0;
 }
-nav.navbar-black ul {
-  margin: 0;
-  padding: 0;
-}
-nav.navbar-black ul a {
-  padding: 0 15px;
-  line-height: 50px;
-  color: #fff;
-}
-.home > .wrap #latest-stories {
+.home #latest-stories {
   padding: 72px 0 43px;
 }
-.home > .wrap #latest-stories .img-box {
+.home #latest-stories .img-box {
   margin-top: 2.2rem;
 }
-.home > .wrap #in-pictures {
+.home #in-pictures {
   padding: 42px 0 74px;
   background: #f2f2f2;
 }
-.home > .wrap #in-pictures h2 {
+.home #in-pictures h2 {
   margin-top: 0;
   text-align: center;
 }
-.home > .wrap #in-pictures h2::after {
+.home #in-pictures h2::after {
   display: none;
 }
-.home > .wrap #in-pictures .img-box {
+.home #in-pictures .img-box {
   margin-top: 0.8em;
   position: relative;
 }
-.home > .wrap #in-pictures .img-box::after {
+.home #in-pictures .img-box::after {
   content: "";
   position: absolute;
   background: url("../img/photoIcon.png");
@@ -174,16 +181,16 @@ nav.navbar-black ul a {
   top: calc(50% - 17px);
   left: calc(50% - 22px);
 }
-.home > .wrap #economy-and-health {
+.home #economy-and-health {
   padding: 36px 0;
 }
-.home > .wrap #economy-and-health #economy .img-box {
+.home #economy-and-health #economy .img-box {
   margin-top: 2em;
 }
-.home > .wrap #economy-and-health #health .health-articles {
+.home #economy-and-health #health .health-articles {
   margin-top: 15px;
 }
-.home > .wrap #economy-and-health #health .health-articles p {
+.home #economy-and-health #health .health-articles p {
   line-height: 1.3em;
 }
 footer {
