@@ -114,13 +114,11 @@ a:focus {
   display: block !important;
 }
 nav.navbar-black {
-  display: none;
   background: #333;
-  height: 50px;
 }
-@media screen and (min-width: 790px) {
+@media screen and (max-width: 780px) {
   nav.navbar-black {
-    display: block;
+    display: none;
   }
 }
 nav.navbar-black ul {
@@ -198,21 +196,47 @@ footer {
   border-top: 1px solid #ccc;
 }
 footer img {
+  display: block;
   margin: 0 auto 50px;
 }
-footer nav.navbar-black {
-  height: 86px;
+footer nav {
+  font-size: 12px;
+  background: #333;
 }
-footer nav.navbar-black ul > li > a {
-  line-height: 86px;
+footer nav ul {
+  margin: 0;
+  padding: 0;
 }
-footer nav.navbar-black p {
+footer nav ul a {
+  color: #fff;
+  float: none;
+  display: block;
   padding: 0 15px;
-  line-height: 86px;
+  line-height: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 560px) {
+  footer nav ul a {
+    float: left;
+    line-height: 86px;
+  }
+}
+footer nav p {
+  padding: 0 15px;
+  line-height: 30px;
   color: #fff;
   font-size: 12px;
-  text-align: right;
+  text-align: center;
+  margin: 50px 0 0;
 }
-footer nav.navbar-black p a {
+@media screen and (min-width: 560px) {
+  footer nav p {
+    line-height: 86px;
+    margin: 0;
+    text-align: left;
+  }
+}
+footer nav p a {
+  text-align: right;
   color: #29abe2;
 }

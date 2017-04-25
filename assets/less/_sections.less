@@ -1,10 +1,8 @@
   nav.navbar-black {
-    display: none;
-    @media screen and (min-width: 790px){
-      display: block;
+    @media screen and (max-width: 780px){
+      display: none;
     }
     background: @gray-darker;
-    height: 50px;
     ul {
       margin: 0;
       padding: 0;
@@ -235,21 +233,45 @@ footer {
   padding: 88px 0 0 0;
   border-top: 1px solid @gray-light;
   img {
+    display: block;
     margin: 0 auto 50px;
   }
 
-  nav.navbar-black {
-    height: 86px;
-    ul > li > a {
-      line-height: 86px;
+  nav {
+    font-size: 12px;
+    background: @gray-darker;
+    ul {
+      margin: 0;
+      padding: 0;
+
+      a {
+        color: #fff;
+        float: none;
+        display: block;
+        padding: 0 15px;
+        line-height: 30px;
+        text-align: center;
+        @media screen and (min-width: 560px) {
+          float: left;
+          line-height: 86px;
+        }
+      }
     }
+
     p {
       padding: 0 15px;
-      line-height: 86px;
+      line-height: 30px;
       color: #fff;
       font-size: 12px;
-      text-align: right; 
+      text-align: center; 
+      margin: 50px 0 0;
+      @media screen and (min-width: 560px) {
+        line-height: 86px;
+        margin: 0;
+        text-align: left;
+      }
       a {
+        text-align: right;
         color: @brand-primary;
       }
     }
