@@ -1,6 +1,21 @@
   nav.navbar-black {
+    display: none;
+    @media screen and (min-width: 790px){
+      display: block;
+    }
     background: @gray-darker;
     height: 50px;
+    ul {
+      margin: 0;
+      padding: 0;
+
+      a {
+        padding: 0 15px;
+        line-height: 50px;
+        color: #fff;
+        display: block;
+      }
+    }
     ul.pages-list {
       float: left;
       li {
@@ -17,16 +32,6 @@
       }
       &:last-child a {
         padding-right: 0;
-      }
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-
-      a {
-        padding: 0 15px;
-        line-height: 50px;
-        color: #fff;
       }
     }
   }
@@ -173,7 +178,7 @@
   // }
 
 
-.home > .wrap {
+.home {
   #latest-stories {
     padding: 72px 0 43px;
     .img-box {
