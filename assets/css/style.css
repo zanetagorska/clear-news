@@ -149,6 +149,25 @@ nav.navbar-black ul.social-media li {
 nav.navbar-black ul.social-media:last-child a {
   padding-right: 0;
 }
+.navbar {
+  background: pink;
+  position: fixed;
+  width: 100%;
+}
+.navbar .level2-list {
+  background: yellow;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.navbar .level3-list {
+  background: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
 .home #latest-stories {
   padding: 72px 0 43px;
 }
