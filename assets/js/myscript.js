@@ -6,6 +6,23 @@ var swiper = new Swiper('.swiper-container', {
   speed: 600
 });
 
+// Menu tło na scroll
+function init() {
+  window.addEventListener('scroll', function(e){
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    shrinkOn = 1,
+    navbar = document.querySelector('.navbar');
+    if (distanceY > shrinkOn) {
+      classie.add(navbar,'smaller');
+    } else {
+      if (classie.has(navbar,'smaller')) {
+        classie.remove(navbar,'smaller');
+      }
+    }
+  });
+}
+window.onload = init();
+
 $(function() {
 // Photo BG
   var slides = $('.swiper-slide');
@@ -30,9 +47,9 @@ $(function() {
       $('.level1-ul').css('display', 'block');
     }
     if($(window).width()<450){
-      $('.level2-ul').css('display', 'none');
+      $('.level2-list').css('display', 'none');
     }else{
-      $('level2-ul').css('display', 'flex');
+      $('level2-list').css('display', 'block');
     }
   });
 
@@ -40,7 +57,7 @@ $(function() {
   $('#entertainment').click(function(e){
     if($(window).width()>449){
       e.preventDefault();
-      $('.level2-ul').toggle();
+      $('.level2-list').toggle();
     };
   });
 

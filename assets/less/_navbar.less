@@ -35,10 +35,26 @@ nav.navbar-black {
 }
 
 .navbar {
-  background: pink;
+  background: #fff;
   position: fixed;
   width: 100%;
   z-index: 1;
+  .transition();
+
+  &.smaller {
+    top: 0;
+    .logo-box {
+      margin: 23px 0;
+      img {
+        width: 180px;
+      }
+    }
+  }
+
+  .logo-box {
+    text-align: center;
+    margin: 50px 0;
+  }
 
   .fa.fa-bars {
     display: inline-block;
@@ -55,42 +71,88 @@ nav.navbar-black {
 
   .level1-ul {
     display: none;
+    margin-bottom: 3px;
     @media screen and (min-width: 762px) {
       display: flex;
+    }
+    a {
+      .transition();
+      &:hover, &:active, &:focus {
+        border-bottom: 3px solid @brand-primary;
+        color: @brand-primary;
+      }
     }
   }
 
   .level2-list {
-    background: yellow;
+    background: @gray-darker;
+    padding: 50px 0;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    a {
+      text-transform: none;
+      color: #fff;
+      &:hover {
+        border-bottom: none;
+      }
+    }
   }
 
   .level3-list {
-    background: red;
+    background: @gray-darker;
+    color: #fff;
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 0;
     width: 100%;
 
     #video-gallery {
       display: flex;
       a {
-        padding: 5px;
+        margin: 0 25px;
         display: block;
         position: relative;
 
         &:first-child {
-          padding-left: 0;
+          margin-left: 0;
         }
         &:last-child {
-          padding-right: 0;
+          margin-right: 0;
         }
       }
-      img {
-        width: 100%;
+      .img-box {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("../img/playIcon.png") no-repeat;
+          width: 58px;
+          height: 58px;
+          top: ~"calc(50% - 29px)";
+          left: ~"calc(50% - 29px)";
+        }
+        &::before {
+          position: absolute;
+          content:"";
+          height:100%;
+          width:100%;
+          top:0;
+          left:0;
+          background: rgba(191,191,191,1);
+          background: -moz-linear-gradient(-45deg, rgba(191,191,191,1) 0%, rgba(121,121,121,0.69) 52%, rgba(0,0,0,0.4) 100%);
+          background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(191,191,191,1)), color-stop(52%, rgba(121,121,121,0.69)), color-stop(100%, rgba(0,0,0,0.4)));
+          background: -webkit-linear-gradient(-45deg, rgba(191,191,191,1) 0%, rgba(121,121,121,0.69) 52%, rgba(0,0,0,0.4) 100%);
+          background: -o-linear-gradient(-45deg, rgba(191,191,191,1) 0%, rgba(121,121,121,0.69) 52%, rgba(0,0,0,0.4) 100%);
+          background: -ms-linear-gradient(-45deg, rgba(191,191,191,1) 0%, rgba(121,121,121,0.69) 52%, rgba(0,0,0,0.4) 100%);
+          background: linear-gradient(135deg, rgba(191,191,191,1) 0%, rgba(121,121,121,0.69) 52%, rgba(0,0,0,0.4) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfbfbf', endColorstr='#000000', GradientType=1 );
+        }
+      }
+      h3 {
+        color: #fff;
+        margin-bottom: 43px;
       }
     }
   }
