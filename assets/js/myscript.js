@@ -55,6 +55,7 @@ $(function() {
     if($(window).width()>=762){
       e.preventDefault();
       $('.level2-list').toggle();
+      $(this).find('.fa').toggleClass('fa-angle-down fa-angle-up');
     };
   });
 
