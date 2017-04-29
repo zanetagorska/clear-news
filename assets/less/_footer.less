@@ -24,6 +24,9 @@ footer {
           float: left;
           line-height: 86px;
         }
+        &:hover {
+          color: darken(#fff, 20%);
+        }
       }
     }
 
@@ -42,8 +45,10 @@ footer {
       a {
         text-align: right;
         color: @brand-primary;
+        &:hover {
+          color: lighten(@brand-primary, 15%)
+        }
       }
     }
-
   }
 }

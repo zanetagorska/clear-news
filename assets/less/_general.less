@@ -117,8 +117,8 @@ a {
   color: @gray;
   text-decoration: none;
   .transition();
-  &:hover, &:focus, &:visited {
-
+  &:hover{
+    color: lighten(@gray, 10%)
   }
   &:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -136,6 +136,14 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  a:hover {
+    color: @brand-primary;
+  }
 }
 .hide {
   display: none !important;

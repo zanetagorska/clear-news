@@ -12,8 +12,12 @@ nav.navbar-black {
       line-height: 50px;
       color: #fff;
       display: block;
+      &:hover {
+        color: darken(#fff, 20%);
+      }
     }
   }
+
   ul.pages-list {
     float: left;
     li {
@@ -98,7 +102,7 @@ nav.navbar-black {
       @media screen and (max-width: 761px) {
         line-height: 50px;
       }
-      .transition();
+      .transition(color);
       &:hover, &:active, &:focus {
         border-bottom: 3px solid @brand-primary;
         color: @brand-primary;
@@ -144,7 +148,6 @@ nav.navbar-black {
         margin: 0 25px;
         display: block;
         position: relative;
-
         &:first-child {
           margin-left: 0;
         }
@@ -183,6 +186,10 @@ nav.navbar-black {
       h3 {
         color: #fff;
         margin-bottom: 43px;
+        .transition();
+        &:hover {
+          color: @brand-primary;
+        }
       }
     }
   }
