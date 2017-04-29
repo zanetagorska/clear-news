@@ -41,24 +41,29 @@ $(function() {
 
 // odpowiedni display menu dla różnych ekranów
   $(window).resize(function(){
-    if($(window).width()>762){
+    if($(window).width()>=762){
       $('.level1-ul').css('display', 'flex');
+      $('level2-list').css('display', 'block');
     }else{
       $('.level1-ul').css('display', 'block');
-    }
-    if($(window).width()<450){
       $('.level2-list').css('display', 'none');
-    }else{
-      $('level2-list').css('display', 'block');
     }
   });
 
 // Otwieranie drugiego poziomu listy
   $('#entertainment').click(function(e){
-    if($(window).width()>449){
+    if($(window).width()>=762){
       e.preventDefault();
       $('.level2-list').toggle();
     };
+  });
+
+// Otwieranie i zamytanie trzeciego poziomu listy
+  $('#auditions').click(function(e){
+    if($(window).width()>=762){
+      e.preventDefault();
+      $('.level3-list').slideToggle();
+    }
   });
 
 
