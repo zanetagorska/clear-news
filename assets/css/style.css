@@ -375,28 +375,42 @@ nav.navbar-black ul.social-media:last-child a {
   padding-right: 8px;
   padding-left: 6rem;
 }
-.home #latest-stories {
+#latest-stories {
   padding: 72px 0 43px;
 }
-.home #latest-stories .img-box {
+#latest-stories .img-box {
   margin-top: 2.2rem;
+  overflow: hidden;
 }
-.home #in-pictures {
+#latest-stories .img-box img {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+#latest-stories .img-box img:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#in-pictures {
   padding: 42px 0 74px;
   background: #f2f2f2;
 }
-.home #in-pictures h2 {
+#in-pictures h2 {
   margin-top: 0;
   text-align: center;
 }
-.home #in-pictures h2::after {
+#in-pictures h2::after {
   display: none;
 }
-.home #in-pictures .img-box {
+#in-pictures .img-box {
   margin-top: 0.8em;
   position: relative;
+  overflow: hidden;
 }
-.home #in-pictures .img-box::after {
+#in-pictures .img-box::after {
   content: "";
   position: absolute;
   background: url("../img/photoIcon.png");
@@ -405,16 +419,50 @@ nav.navbar-black ul.social-media:last-child a {
   top: calc(50% - 17px);
   left: calc(50% - 22px);
 }
-.home #economy-and-health {
+#in-pictures .img-box img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#economy-and-health {
   padding: 36px 0;
 }
-.home #economy-and-health #economy .img-box {
+#economy-and-health #economy .img-box {
   margin-top: 2em;
+  overflow: hidden;
 }
-.home #economy-and-health #health .health-articles {
+#economy-and-health #economy .img-box img {
+  -webkit-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+      transform: rotate(0) scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+#economy-and-health #economy .img-box img:hover {
+  -webkit-transform: rotate(15deg) scale(1.3);
+  -ms-transform: rotate(15deg) scale(1.3);
+      transform: rotate(15deg) scale(1.3);
+}
+#economy-and-health #health .health-articles {
   margin-top: 15px;
 }
-.home #economy-and-health #health .health-articles p {
+#economy-and-health #health .health-articles p {
   line-height: 1.3em;
 }
 footer {
